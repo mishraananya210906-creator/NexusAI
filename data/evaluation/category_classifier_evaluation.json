@@ -1,0 +1,94 @@
+{
+    "model": "Category_Classifier",
+    "accuracy": 0.84,
+    "macro_f1": 0.8367,
+    "classification_report": {
+        "API": {
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1-score": 0.8333333333333334,
+            "support": 5.0
+        },
+        "Account": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 5.0
+        },
+        "Billing": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8,
+            "support": 5.0
+        },
+        "Bug": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1-score": 0.75,
+            "support": 5.0
+        },
+        "Subscription": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8,
+            "support": 5.0
+        },
+        "accuracy": 0.84,
+        "macro avg": {
+            "precision": 0.8628571428571428,
+            "recall": 0.8400000000000001,
+            "f1-score": 0.8366666666666667,
+            "support": 25.0
+        },
+        "weighted avg": {
+            "precision": 0.8628571428571428,
+            "recall": 0.84,
+            "f1-score": 0.8366666666666667,
+            "support": 25.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            5,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            5,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            4,
+            0,
+            1
+        ],
+        [
+            1,
+            0,
+            1,
+            3,
+            0
+        ],
+        [
+            1,
+            0,
+            0,
+            0,
+            4
+        ]
+    ],
+    "labels": [
+        "API",
+        "Account",
+        "Billing",
+        "Bug",
+        "Subscription"
+    ]
+}

@@ -1,0 +1,19 @@
+
+NEXUSAI ACCOUNT SUPPORT GUIDE
+
+LOGIN ISSUES:
+Users can log in using their registered email address and password.
+If a user forgets their password, they can select the Forgot Password option.
+A password reset link will be sent to their registered email.
+
+ACCOUNT UPDATES:
+Users can update their registered email address through Account Settings.
+Email changes require verification.
+
+ACCOUNT DELETION:
+Users can request account deletion through Account Settings.
+The deletion request must be verified before processing.
+
+SECURITY:
+Users should never share their passwords or verification codes.
+For suspicious account activity, contact the support team.

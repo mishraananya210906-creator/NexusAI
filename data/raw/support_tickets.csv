@@ -1,0 +1,101 @@
+ticket_id,text,category,priority,department
+1,I cannot log into my account,Account,High,Account Support
+2,My payment was deducted twice,Billing,High,Billing Support
+3,How can I change my password,Account,Low,Account Support
+4,The application crashes when I open it,Bug,High,Technical Support
+5,I want to cancel my subscription,Subscription,Low,Subscription Support
+6,My API integration is not working,API,High,Developer Support
+7,I forgot my username,Account,Low,Account Support
+8,Please explain your pricing plans,Billing,Low,Billing Support
+9,The dashboard is loading very slowly,Bug,Medium,Technical Support
+10,I need to upgrade my subscription,Subscription,Low,Subscription Support
+11,My invoice is incorrect,Billing,Medium,Billing Support
+12,I cannot connect to the API,API,High,Developer Support
+13,How do I delete my account,Account,Low,Account Support
+14,The software shows an unexpected error,Bug,Medium,Technical Support
+15,My subscription expired unexpectedly,Subscription,Medium,Subscription Support
+16,I was charged after cancellation,Billing,High,Billing Support
+17,How can I generate an API key,API,Low,Developer Support
+18,The application freezes frequently,Bug,Medium,Technical Support
+19,I want to update my account email,Account,Low,Account Support
+20,I need help understanding my invoice,Billing,Low,Billing Support
+T021,Account login fails after entering the correct password.,Account,High,Account Support
+T022,I need to change my registered phone number.,Account,Low,Account Support
+T023,My account has been temporarily locked.,Account,High,Account Support
+T024,I am unable to verify my email address.,Account,Medium,Account Support
+T025,I forgot my account password and cannot sign in.,Account,High,Account Support
+T026,My profile information is not updating.,Account,Low,Account Support
+T027,I received an alert about an unknown login.,Account,High,Account Support
+T028,How can I delete my existing account?,Account,Low,Account Support
+T029,My account verification link has expired.,Account,Medium,Account Support
+T030,I cannot access my account settings.,Account,Medium,Account Support
+T031,My username is not being recognized.,Account,High,Account Support
+T032,I want to update my personal details.,Account,Low,Account Support
+T033,The password reset email never arrived.,Account,Medium,Account Support
+T034,Someone changed my account information without permission.,Account,High,Account Support
+T035,My account registration is still pending.,Account,Low,Account Support
+T036,My credit card was charged twice for one order.,Billing,High,Billing Support
+T037,The payment failed but money was deducted.,Billing,High,Billing Support
+T038,I need an invoice for my recent payment.,Billing,Low,Billing Support
+T039,My refund has not arrived yet.,Billing,Medium,Billing Support
+T040,The amount charged is different from the displayed price.,Billing,High,Billing Support
+T041,Where can I download my billing statement?,Billing,Low,Billing Support
+T042,My payment transaction is still pending.,Billing,Medium,Billing Support
+T043,I was charged for a service I did not purchase.,Billing,High,Billing Support
+T044,My invoice contains incorrect billing details.,Billing,Medium,Billing Support
+T045,The payment gateway shows an error.,Billing,Medium,Billing Support
+T046,I want to know the status of my refund.,Billing,Low,Billing Support
+T047,My bank transfer is not reflected in my account.,Billing,Medium,Billing Support
+T048,The billing page displays an incorrect amount.,Billing,Medium,Billing Support
+T049,I need clarification about a transaction on my statement.,Billing,Low,Billing Support
+T050,My subscription payment was processed unexpectedly.,Billing,High,Billing Support
+T051,The application crashes when I click the submit button.,Bug,High,Technical Support
+T052,The dashboard is displaying a blank screen.,Bug,High,Technical Support
+T053,The search function returns incorrect results.,Bug,Medium,Technical Support
+T054,Images are not loading on the homepage.,Bug,Medium,Technical Support
+T055,The application freezes after opening the settings page.,Bug,Medium,Technical Support
+T056,I receive an error whenever I upload a file.,Bug,Medium,Technical Support
+T057,The notification button does not respond.,Bug,Low,Technical Support
+T058,The website layout breaks on mobile devices.,Bug,Medium,Technical Support
+T059,The save button does not store my changes.,Bug,High,Technical Support
+T060,The application takes too long to load.,Bug,Medium,Technical Support
+T061,The filter option is not working correctly.,Bug,Low,Technical Support
+T062,I cannot download reports from the dashboard.,Bug,Medium,Technical Support
+T063,The page displays an unexpected error after refreshing.,Bug,Medium,Technical Support
+T064,The application does not display the latest updates.,Bug,Low,Technical Support
+T065,The navigation menu disappears when scrolling.,Bug,Low,Technical Support
+T066,The export feature produces an empty file.,Bug,Medium,Technical Support
+T067,I want to upgrade my current subscription plan.,Subscription,Low,Subscription Support
+T068,My subscription expired before its renewal date.,Subscription,High,Subscription Support
+T069,How can I cancel my subscription?,Subscription,Low,Subscription Support
+T070,My premium subscription benefits are unavailable.,Subscription,Medium,Subscription Support
+T071,I want to switch to a different subscription plan.,Subscription,Low,Subscription Support
+T072,My subscription renewal failed.,Subscription,Medium,Subscription Support
+T073,How do I check my subscription expiry date?,Subscription,Low,Subscription Support
+T074,My plan was downgraded without my request.,Subscription,High,Subscription Support
+T075,I cannot access features included in my plan.,Subscription,Medium,Subscription Support
+T076,I want to pause my subscription temporarily.,Subscription,Low,Subscription Support
+T077,My subscription is not showing in my profile.,Subscription,Medium,Subscription Support
+T078,The automatic renewal option is not working.,Subscription,Medium,Subscription Support
+T079,I need information about available subscription plans.,Subscription,Low,Subscription Support
+T080,My subscription was cancelled unexpectedly.,Subscription,High,Subscription Support
+T081,I want to reactivate my expired subscription.,Subscription,Low,Subscription Support
+T082,The subscription page shows the wrong renewal date.,Subscription,Medium,Subscription Support
+T083,I cannot change my current subscription plan.,Subscription,Medium,Subscription Support
+T084,My API request returns an unauthorized error.,API,High,Developer Support
+T085,The API response contains missing fields.,API,Medium,Developer Support
+T086,I cannot generate a new API key.,API,High,Developer Support
+T087,The API endpoint is returning a server error.,API,High,Developer Support
+T088,How can I authenticate my API requests?,API,Low,Developer Support
+T089,The API rate limit is blocking my requests.,API,Medium,Developer Support
+T090,My API integration stopped working.,API,High,Developer Support
+T091,The API documentation does not explain this endpoint.,API,Low,Developer Support
+T092,I am receiving invalid JSON from the API.,API,Medium,Developer Support
+T093,The API connection is timing out.,API,Medium,Developer Support
+T094,How can I configure API authentication?,API,Low,Developer Support
+T095,The API returns an unexpected status code.,API,Medium,Developer Support
+T096,My API key has stopped working.,API,High,Developer Support
+T097,I need help integrating the API with my application.,API,Low,Developer Support
+T098,The API pagination feature is returning duplicate records.,API,Medium,Developer Support
+T099,The webhook notification is not reaching my server.,API,Medium,Developer Support
+T100,The API request payload is being rejected.,API,Medium,Developer Support

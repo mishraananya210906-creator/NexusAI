@@ -1,0 +1,21 @@
+ticket_id,text,category,priority,department
+1,I cannot log into my account,Account,High,Technical
+2,My payment was deducted twice,Billing,High,Finance
+3,How can I change my password,Account,Low,Technical
+4,The application crashes when I open it,Bug,High,Technical
+5,I want to cancel my subscription,Subscription,Medium,Billing
+6,My API integration is not working,API,High,Technical
+7,I forgot my username,Account,Medium,Technical
+8,Please explain your pricing plans,Billing,Low,Finance
+9,The dashboard is loading very slowly,Bug,Medium,Technical
+10,I need to upgrade my subscription,Subscription,Medium,Billing
+11,My invoice is incorrect,Billing,High,Finance
+12,I cannot connect to the API,API,High,Technical
+13,How do I delete my account,Account,Low,Technical
+14,The software shows an unexpected error,Bug,High,Technical
+15,My subscription expired unexpectedly,Subscription,Medium,Billing
+16,I was charged after cancellation,Billing,High,Finance
+17,How can I generate an API key,API,Low,Technical
+18,The application freezes frequently,Bug,Medium,Technical
+19,I want to update my account email,Account,Low,Technical
+20,I need help understanding my invoice,Billing,Low,Finance

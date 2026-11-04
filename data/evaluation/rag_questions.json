@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How can a user reset their password?",
+    "expected_source": "account_guide.txt"
+  },
+  {
+    "question": "How can users update their registered email?",
+    "expected_source": "account_guide.txt"
+  },
+  {
+    "question": "How can a user request account deletion?",
+    "expected_source": "account_guide.txt"
+  },
+  {
+    "question": "What should users do about suspicious account activity?",
+    "expected_source": "account_guide.txt"
+  },
+  {
+    "question": "Should users share their passwords or verification codes?",
+    "expected_source": "account_guide.txt"
+  },
+  {
+    "question": "What should a user do if charged twice?",
+    "expected_source": "billing_guide.txt"
+  },
+  {
+    "question": "Where can users check their payment history?",
+    "expected_source": "billing_guide.txt"
+  },
+  {
+    "question": "How can users request a refund?",
+    "expected_source": "billing_guide.txt"
+  },
+  {
+    "question": "Where can users see their subscription charges?",
+    "expected_source": "billing_guide.txt"
+  },
+  {
+    "question": "What should users do if a payment fails?",
+    "expected_source": "billing_guide.txt"
+  }
+]

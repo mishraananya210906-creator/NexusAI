@@ -1,0 +1,18 @@
+NEXUSAI BILLING SUPPORT GUIDE
+
+PAYMENT ISSUES:
+Users can check their payment history in Billing Settings.
+If a payment fails, users should verify their payment method.
+
+DUPLICATE PAYMENTS:
+If a user is charged twice for the same transaction,
+they should contact the billing support team.
+The support team will investigate duplicate charges.
+
+REFUNDS:
+Refund requests can be submitted through Billing Settings.
+Refund eligibility depends on the applicable refund policy.
+
+SUBSCRIPTION BILLING:
+Users can view their subscription charges and billing dates
+in the Subscription section.

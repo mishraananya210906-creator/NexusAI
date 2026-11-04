@@ -1,0 +1,32 @@
+
+{
+    "project_name": "NexusAI",
+    "version": "1.0.0",
+    "random_seed": 42,
+
+    "data": {
+        "ticket_dataset": "data/raw/support_tickets.csv",
+        "processed_directory": "data/processed"
+    },
+
+    "triage": {
+        "categories": [
+            "Account",
+            "Billing",
+            "Bug",
+            "Subscription",
+            "API"
+        ],
+        "priorities": [
+            "High",
+            "Medium",
+            "Low"
+        ]
+    },
+
+    "rag": {
+        "chunk_size": 500,
+        "chunk_overlap": 100,
+        "top_k": 5
+    }
+}
