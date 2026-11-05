@@ -1,7 +1,5 @@
 
-import os
 import re
-import secrets
 import logging
 import time
 
@@ -10,14 +8,8 @@ from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
 
-from fastapi import (
-    FastAPI,
-    Header,
-    HTTPException,
-    Depends,
-    Request
-)
-
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -39,13 +31,7 @@ from src.triage.ticket_schema import TicketPrediction
 # =====================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-
 load_dotenv(PROJECT_ROOT / ".env")
-
-API_KEY = os.getenv("NEXUSAI_API_KEY")
-
-if not API_KEY:
-    raise RuntimeError("NEXUSAI_API_KEY is missing from .env")
 
 
 # =====================================================
@@ -95,7 +81,7 @@ GREETINGS = {
 }
 
 
-def is_greeting(message: str) -> bool:
+def is_greeting(message: str):
 
     normalized = re.sub(
         r"[^\w\s]",
@@ -145,8 +131,19 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="NexusAI API",
     description="Intelligent Support Assistant with RAG and Ticket Intelligence",
-    version="1.2.1",
+    version="1.3.0",
     lifespan=lifespan
+)
+
+# Public demo API: allow the deployed frontend to connect.
+# Restrict this to your Vercel domain after deployment.
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"]
 )
 
 app.state.limiter = limiter
@@ -206,28 +203,7 @@ class TicketRequest(BaseModel):
 
 
 # =====================================================
-# 9. API KEY AUTHENTICATION
-# =====================================================
-
-def verify_api_key(
-    x_api_key: str = Header(default=None)
-):
-
-    if not x_api_key or not secrets.compare_digest(
-        x_api_key,
-        API_KEY
-    ):
-
-        raise HTTPException(
-            status_code=401,
-            detail="Invalid or missing API key"
-        )
-
-    return x_api_key
-
-
-# =====================================================
-# 10. HOME ENDPOINT
+# 9. HOME ENDPOINT
 # =====================================================
 
 @app.get("/")
@@ -240,7 +216,7 @@ def home():
 
 
 # =====================================================
-# 11. HEALTH CHECK ENDPOINT
+# 10. HEALTH CHECK ENDPOINT
 # =====================================================
 
 @app.get("/health", response_model=HealthResponse)
@@ -253,15 +229,14 @@ def health_check():
 
 
 # =====================================================
-# 12. RAG QUESTION-ANSWERING ENDPOINT
+# 11. RAG QUESTION-ANSWERING ENDPOINT
 # =====================================================
 
 @app.post("/ask")
 @limiter.limit("5/minute")
 def ask_question(
     request: Request,
-    question_request: QuestionRequest,
-    api_key: str = Depends(verify_api_key)
+    question_request: QuestionRequest
 ):
 
     question = question_request.question.strip()
@@ -272,8 +247,6 @@ def ask_question(
             status_code=400,
             detail="Question cannot be empty"
         )
-
-    # Handle greetings before document retrieval
 
     if is_greeting(question):
 
@@ -349,7 +322,7 @@ def ask_question(
 
 
 # =====================================================
-# 13. SUPPORT TICKET TRIAGE ENDPOINT
+# 12. SUPPORT TICKET TRIAGE ENDPOINT
 # =====================================================
 
 @app.post(
@@ -359,8 +332,7 @@ def ask_question(
 @limiter.limit("5/minute")
 def triage_ticket(
     request: Request,
-    ticket_request: TicketRequest,
-    api_key: str = Depends(verify_api_key)
+    ticket_request: TicketRequest
 ):
 
     try:

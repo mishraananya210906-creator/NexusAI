@@ -2,6 +2,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const API_BASE_URL = "https://nexusai-8rmm.onrender.com";
+
 function App() {
   const [activeTab, setActiveTab] = useState("Dashboard");
 
@@ -43,7 +45,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/ask", {
+      const response = await fetch(`${API_BASE_URL}/ask`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -101,7 +103,7 @@ function App() {
     setTicketError("");
 
     try {
-      const response = await fetch("/api/triage", {
+      const response = await fetch(`${API_BASE_URL}/triage`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -216,9 +218,7 @@ function App() {
           </div>
         </header>
 
-        {/* ================================== */}
         {/* DASHBOARD */}
-        {/* ================================== */}
 
         {activeTab === "Dashboard" && (
           <>
@@ -329,9 +329,7 @@ function App() {
           </>
         )}
 
-        {/* ================================== */}
         {/* AI ASSISTANT */}
-        {/* ================================== */}
 
         {activeTab === "AI Assistant" && (
           <section className="panel chat-panel">
@@ -426,9 +424,7 @@ function App() {
           </section>
         )}
 
-        {/* ================================== */}
         {/* SUPPORT TICKETS */}
-        {/* ================================== */}
 
         {activeTab === "Support Tickets" && (
           <>
@@ -592,9 +588,7 @@ function App() {
           </>
         )}
 
-        {/* ================================== */}
         {/* ANALYTICS DASHBOARD */}
-        {/* ================================== */}
 
         {activeTab === "Analytics" && (
           <section className="panel analytics-page">
@@ -612,8 +606,6 @@ function App() {
                 Dataset: 100 Tickets
               </span>
             </div>
-
-            {/* SUMMARY CARDS */}
 
             <div className="analytics-summary-grid">
 
@@ -636,8 +628,6 @@ function App() {
               </div>
 
             </div>
-
-            {/* CATEGORY DISTRIBUTION */}
 
             <div className="analytics-section">
               <h3>Ticket Category Distribution</h3>
@@ -666,8 +656,6 @@ function App() {
               ))}
             </div>
 
-            {/* PRIORITY DISTRIBUTION */}
-
             <div className="analytics-section">
               <h3>Ticket Priority Distribution</h3>
 
@@ -694,8 +682,6 @@ function App() {
                 </div>
               ))}
             </div>
-
-            {/* MODEL EVALUATION */}
 
             <div className="analytics-section">
               <h3>Model Evaluation</h3>
