@@ -4,7 +4,9 @@ An AI-powered customer support system that combines Retrieval-Augmented Generati
 
 ## Overview
 
-NexusAI is an intelligent support workspace designed to simplify customer service operations. It retrieves answers from support documentation and automatically categorizes customer tickets based on their content.
+NexusAI is an intelligent support workspace designed to simplify customer service operations. It retrieves answers from support documentation and automatically categorizes customer tickets based on their content.                                                                                                               ## Dashboard Preview
+
+![NexusAI Dashboard](dashboard.png)
 
 ## Features
 
