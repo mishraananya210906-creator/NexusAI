@@ -1,3 +1,6 @@
+# NexusAI – Intelligent Support Assistant
+
+🌐 **Live Demo:** [Open NexusAI]https://nexus-ai-five-orpin.vercel.app/
 # NexusAI — Intelligent Support Assistant
 
 An AI-powered customer support system that combines Retrieval-Augmented Generation (RAG) and Machine Learning to answer customer queries and intelligently classify support tickets.
